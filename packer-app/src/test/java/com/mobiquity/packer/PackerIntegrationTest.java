@@ -1,14 +1,14 @@
 package com.mobiquity.packer;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(MockitoExtension.class)
 class PackerIntegrationTest {

@@ -3,8 +3,11 @@ package com.mobiquity.packer.service.impl.strategy;
 import com.mobiquity.packer.model.BackpackItem;
 import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.model.PackingResult;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**

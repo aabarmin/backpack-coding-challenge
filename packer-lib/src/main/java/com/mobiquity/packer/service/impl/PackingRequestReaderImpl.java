@@ -2,7 +2,6 @@ package com.mobiquity.packer.service.impl;
 
 import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.service.PackingRequestReader;
-
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;

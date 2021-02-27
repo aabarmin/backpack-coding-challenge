@@ -3,7 +3,6 @@ package com.mobiquity.packer.service.impl;
 import com.mobiquity.packer.model.BackpackItem;
 import com.mobiquity.packer.model.PackingResult;
 import com.mobiquity.packer.service.PackingResultWriter;
-
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;

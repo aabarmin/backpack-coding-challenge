@@ -3,7 +3,6 @@ package com.mobiquity.packer;
 import com.mobiquity.packer.exception.APIException;
 import com.mobiquity.packer.service.KnapsackProblemSolver;
 import com.mobiquity.packer.service.KnapsackProblemSolverBuilder;
-
 import java.nio.file.Path;
 
 public class Packer {

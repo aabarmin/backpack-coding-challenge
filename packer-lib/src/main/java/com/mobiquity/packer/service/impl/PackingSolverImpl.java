@@ -4,7 +4,6 @@ import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.model.PackingResult;
 import com.mobiquity.packer.service.PackingSolver;
 import com.mobiquity.packer.service.impl.strategy.PackingSolvingStrategy;
-
 import java.util.Collection;
 import java.util.stream.Collectors;
 

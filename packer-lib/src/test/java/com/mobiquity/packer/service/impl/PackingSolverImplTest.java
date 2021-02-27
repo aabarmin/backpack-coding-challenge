@@ -3,15 +3,13 @@ package com.mobiquity.packer.service.impl;
 import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.model.PackingResult;
 import com.mobiquity.packer.service.impl.strategy.PackingSolvingStrategy;
+import java.util.Collection;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.util.Collection;
-import java.util.List;
-
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;

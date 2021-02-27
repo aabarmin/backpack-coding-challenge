@@ -90,7 +90,8 @@ dependencies {
 
 # Configured GitHub Actions
 
-There are two GitHub Actions workflows configured in the project: 
+There are three GitHub Actions workflows configured in the project: 
 
 * `.github/workflows/build.yml` to check every commit. 
 * `.github/workflows/release.yml` to deploy artifacts to GitHub Packages when a new GitHub release is created. 
+* `.github/workflows/check-style.yml` to check code style of every commit.

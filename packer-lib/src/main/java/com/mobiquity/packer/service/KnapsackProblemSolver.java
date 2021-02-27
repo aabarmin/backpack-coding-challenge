@@ -4,7 +4,6 @@ import com.mobiquity.packer.exception.APIException;
 import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.model.PackingResult;
 import com.mobiquity.packer.model.ValidationResult;
-
 import java.nio.file.Path;
 import java.util.Collection;
 

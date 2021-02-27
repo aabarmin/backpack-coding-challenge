@@ -2,12 +2,11 @@ package com.mobiquity.packer.service.impl;
 
 import com.mobiquity.packer.model.BackpackItem;
 import com.mobiquity.packer.model.PackingRequest;
-
-import javax.money.MonetaryAmount;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import javax.money.MonetaryAmount;
 
 /**
  * Reads a single packing request. Every line should follow the pattern:

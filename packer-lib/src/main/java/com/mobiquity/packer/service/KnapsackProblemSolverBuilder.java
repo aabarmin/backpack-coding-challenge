@@ -1,9 +1,12 @@
 package com.mobiquity.packer.service;
 
-import com.mobiquity.packer.service.impl.*;
+import com.mobiquity.packer.service.impl.MoneyReader;
+import com.mobiquity.packer.service.impl.PackingRequestReaderImpl;
+import com.mobiquity.packer.service.impl.PackingSolverImpl;
+import com.mobiquity.packer.service.impl.RequestLineReader;
+import com.mobiquity.packer.service.impl.StringPackingResultWriter;
 import com.mobiquity.packer.service.impl.strategy.DynamicPackingSolvingStrategy;
 import com.mobiquity.packer.service.impl.strategy.PackingSolvingStrategy;
-
 import java.util.Objects;
 
 public class KnapsackProblemSolverBuilder {

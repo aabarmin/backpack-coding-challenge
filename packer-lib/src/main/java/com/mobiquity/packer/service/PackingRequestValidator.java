@@ -3,7 +3,6 @@ package com.mobiquity.packer.service;
 import com.mobiquity.packer.model.BackpackItem;
 import com.mobiquity.packer.model.PackingRequest;
 import com.mobiquity.packer.model.ValidationResult;
-
 import java.util.Collection;
 import java.util.Objects;
 

@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'javax.money:money-api:1.1'
+    implementation 'org.javamoney:moneta:1.4.1'
+
+    testImplementation 'com.google.code.gson:gson:2.8.6'
+}

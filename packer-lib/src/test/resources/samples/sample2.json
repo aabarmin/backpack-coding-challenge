@@ -1,0 +1,13 @@
+{
+  "input": {
+    "maxWeight": 8,
+    "items": [
+      {
+        "index": 1,
+        "weight": 15.3,
+        "cost": 34
+      }
+    ]
+  },
+  "output": []
+}

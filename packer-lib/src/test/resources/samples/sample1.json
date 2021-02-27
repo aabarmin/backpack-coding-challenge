@@ -1,0 +1,38 @@
+{
+  "input": {
+    "maxWeight": 81,
+    "items": [
+      {
+        "index": 1,
+        "weight": 53.38,
+        "cost": 45
+      },
+      {
+        "index": 2,
+        "weight": 88.62,
+        "cost": 98
+      },
+      {
+        "index": 3,
+        "weight": 78.48,
+        "cost": 3
+      },
+      {
+        "index": 4,
+        "weight": 72.30,
+        "cost": 76
+      },
+      {
+        "index": 5,
+        "weight": 30.18,
+        "cost": 9
+      },
+      {
+        "index": 6,
+        "weight": 46.34,
+        "cost": 48
+      }
+    ]
+  },
+  "output": [4]
+}

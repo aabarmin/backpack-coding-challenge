@@ -17,9 +17,10 @@ import java.util.stream.Collectors;
  * If the line doesn't follow this pattern, an {@link IllegalArgumentException} is thrown.
  */
 public class RequestLineReader {
-  private static Pattern LINE_PATTERN = Pattern.compile("(?<maxWeight>\\d+)(\\s+)?:(\\s+)?(?<items>.+)");
-  private static Pattern ITEM_PATTERN = Pattern.compile(
-      "\\((?<index>\\d+),(?<weight>[\\d.]+),(?<money>.+)\\)");
+  private static Pattern LINE_PATTERN =
+      Pattern.compile("(?<maxWeight>\\d+)(\\s+)?:(\\s+)?(?<items>.+)");
+  private static Pattern ITEM_PATTERN =
+      Pattern.compile("\\((?<index>\\d+),(?<weight>[\\d.]+),(?<money>.+)\\)");
 
   private final MoneyReader moneyReader;
 

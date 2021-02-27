@@ -11,7 +11,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * https://en.wikipedia.org/wiki/Knapsack_problem#Dynamic_programming_in-advance_algorithm
+ * Solve a knapsack problem using a dynamic programming approach. You can read more about the
+ * algorithm by the following link
+ * <a href="https://en.wikipedia.org/wiki/Knapsack_problem#Dynamic_programming_in-advance_algorithm">Knapsack problem</a>.
+ *
+ * <p>
+ * Because the source data is real numbers, it's necessary norming them by multiplying to 100.
+ * This simple approach allows solving the knapsack problem using natural numbers.
+ * </p>
  */
 public class DynamicPackingSolvingStrategy implements PackingSolvingStrategy {
   @Override
@@ -20,7 +27,7 @@ public class DynamicPackingSolvingStrategy implements PackingSolvingStrategy {
     int itemsCount = items.size();
     final int capacity = request.getMaxWeight() * 100;
 
-    // sorting items to have the most valueable first
+    // sorting items to have the most valuable first
     Collections.sort(items, Comparator.comparing(Item::getValue)
         .thenComparing(Item::getWeight));
 

@@ -9,7 +9,9 @@ ____             _                     _       _____ _           _ _
                       |_|                                                        |___/      
 ```
 
-[![Build Status](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/build.yml/badge.svg)](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/build.yml)
+[![Build Status](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/build.yml/badge.svg)](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/build.yml) 
+[![Check Style](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/check-style.yml/badge.svg)](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/check-style.yml)
+[![Publish package to GitHub Packages](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/release.yml/badge.svg)](https://github.com/aabarmin/backpack-coding-challenge/actions/workflows/release.yml)
 
 # Project Structure
 

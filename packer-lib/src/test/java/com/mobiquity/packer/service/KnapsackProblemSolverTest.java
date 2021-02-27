@@ -1,6 +1,6 @@
 package com.mobiquity.packer.service;
 
-import com.mobiquity.packer.exception.APIException;
+import com.mobiquity.packer.exception.ApiException;
 import com.mobiquity.packer.model.ValidationResult;
 import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
@@ -50,7 +50,7 @@ class KnapsackProblemSolverTest {
   void solve_exceptionInCaseOfViolation() {
     when(requestValidator.validate(anyCollection())).thenReturn(ValidationResult.error(""));
 
-    assertThrows(APIException.class, () -> {
+    assertThrows(ApiException.class, () -> {
       unitUnderTest.pack(Path.of(""));
     });
   }

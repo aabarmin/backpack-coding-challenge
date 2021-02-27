@@ -7,6 +7,15 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * An implementation of {@link PackingResultWriter} that saves the packing results to the string.
+ *
+ * <p>
+ *   Example of the result string:
+ *   4,5 - 4th and 5th elements are put into the backpack
+ *   - - no elements are put into the backpack.
+ * </p>
+ */
 public class StringPackingResultWriter implements PackingResultWriter {
   @Override
   public String write(Collection<PackingResult> results) {
@@ -33,6 +42,5 @@ public class StringPackingResultWriter implements PackingResultWriter {
       isFirst = false;
       builder.append(index);
     }
-//    builder.append(Joiner.on(",").join(indexes));
   }
 }

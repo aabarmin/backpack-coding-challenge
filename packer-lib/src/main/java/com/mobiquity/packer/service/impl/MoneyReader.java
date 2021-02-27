@@ -9,15 +9,16 @@ import org.javamoney.moneta.Money;
  * This component parses money strings.
  */
 public class MoneyReader {
-  private final Pattern MONEY_PATTERN = Pattern.compile("(?<amount>[\\d.]+)");
+  private Pattern moneyPattern = Pattern.compile("(?<amount>[\\d.]+)");
 
   /**
    * Read an instance of the {@link MonetaryAmount} from a give string.
    * @param moneyString is a string which contains monetary data.
    * @return an instance of {@link MonetaryAmount}.
+   * @throws IllegalArgumentException in case if given string doesn't follow the money pattern.
    */
   public MonetaryAmount readMoney(final String moneyString) {
-    final Matcher matcher = MONEY_PATTERN.matcher(moneyString);
+    final Matcher matcher = moneyPattern.matcher(moneyString);
     if (!matcher.find()) {
       throw new IllegalArgumentException("Can't parse money string");
     }

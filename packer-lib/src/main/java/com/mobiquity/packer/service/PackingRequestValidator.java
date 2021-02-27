@@ -15,6 +15,11 @@ public class PackingRequestValidator {
   private int maxItemWeight = 100;
   private int maxItemCost = 100;
 
+  /**
+   * Validate a provided collection of {@link PackingRequest}.
+   * @param requests to check
+   * @return an instance of {@link ValidationResult} which holds the validation status.
+   */
   public ValidationResult validate(final Collection<PackingRequest> requests) {
     Objects.requireNonNull(requests, "Requests should be provided");
 

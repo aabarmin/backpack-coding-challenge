@@ -11,9 +11,13 @@ import javax.money.MonetaryAmount;
 /**
  * Reads a single packing request. Every line should follow the pattern:
  *
+ * <p>
  * weight : items
+ * </p>
  *
+ * <p>
  * If the line doesn't follow this pattern, an {@link IllegalArgumentException} is thrown.
+ * </p>
  */
 public class RequestLineReader {
   private static Pattern LINE_PATTERN =
@@ -27,6 +31,12 @@ public class RequestLineReader {
     this.moneyReader = moneyReader;
   }
 
+  /**
+   * Read a single {@link PackingRequest} from the string.
+   * @param line to read a request from.
+   * @return a request.
+   * @throws IllegalArgumentException if an input line doesn't follow the expected pattern.
+   */
   public PackingRequest readLine(final String line) {
     final Matcher matcher = LINE_PATTERN.matcher(line);
     if (!matcher.matches()) {

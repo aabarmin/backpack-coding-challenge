@@ -1,0 +1,53 @@
+{
+  "input": {
+    "maxWeight": 75,
+    "items": [
+      {
+        "index": 1,
+        "weight": 85.31,
+        "cost": 29
+      },
+      {
+        "index": 2,
+        "weight": 14.55,
+        "cost": 74
+      },
+      {
+        "index": 3,
+        "weight": 3.98,
+        "cost": 16
+      },
+      {
+        "index": 4,
+        "weight": 26.24,
+        "cost": 55
+      },
+      {
+        "index": 5,
+        "weight": 63.69,
+        "cost": 52
+      },
+      {
+        "index": 6,
+        "weight": 76.25,
+        "cost": 75
+      },
+      {
+        "index": 7,
+        "weight": 60.02,
+        "cost": 74
+      },
+      {
+        "index": 8,
+        "weight": 93.18,
+        "cost": 35
+      },
+      {
+        "index": 9,
+        "weight": 89.95,
+        "cost": 78
+      }
+    ]
+  },
+  "output": [2, 7]
+}

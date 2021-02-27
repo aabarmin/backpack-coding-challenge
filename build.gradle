@@ -1,22 +1,23 @@
-plugins {
-  id 'java'
-  id 'maven-publish'
-}
-
-group 'com.mobiquity'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = JavaVersion.VERSION_11
-
-repositories {
-  mavenCentral()
-}
-
-publishing {
-  publications {
-    maven(MavenPublication) {
-      artifactId = 'implementation'
-      from components.java
+allprojects {
+    repositories {
+        mavenCentral()
     }
-  }
+
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    group 'com.mobiquity'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = JavaVersion.VERSION_11
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+        testImplementation 'org.mockito:mockito-core:3.4.6'
+        testImplementation 'org.mockito:mockito-junit-jupiter:3.6.28'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
 }

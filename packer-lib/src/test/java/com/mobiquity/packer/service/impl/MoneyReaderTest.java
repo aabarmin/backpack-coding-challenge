@@ -19,7 +19,8 @@ class MoneyReaderTest {
   @ParameterizedTest
   @CsvSource({
       "€45,45,EUR",
-      "45$,45,EUR"
+      "45€,45,EUR",
+      "45 EUR,45,EUR"
   })
   void readMoney_regularTest(final String inputString,
                              final int amount,

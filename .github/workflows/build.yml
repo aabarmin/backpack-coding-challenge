@@ -32,8 +32,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Grant execute permission the build script
-        run: chmod +x ./check_*.sh
+      - name: Build with Maven
+        run: chmod +x ./check_maven.sh && ./check_maven.sh
 
-      - name: Build
-        run: ./check_all.sh
+      - name: Build with Gradle
+        run: chmod +x ./check_gradle.sh && ./check_gradle.sh

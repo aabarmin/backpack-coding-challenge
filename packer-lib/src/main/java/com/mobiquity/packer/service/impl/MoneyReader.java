@@ -2,6 +2,8 @@ package com.mobiquity.packer.service.impl;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.money.CurrencyUnit;
+import javax.money.Monetary;
 import javax.money.MonetaryAmount;
 import org.javamoney.moneta.Money;
 
@@ -10,6 +12,7 @@ import org.javamoney.moneta.Money;
  */
 public class MoneyReader {
   private Pattern moneyPattern = Pattern.compile("(?<amount>[\\d.]+)");
+  private CurrencyUnit defaultCurrency = Monetary.getCurrency("EUR");
 
   /**
    * Read an instance of the {@link MonetaryAmount} from a give string.
@@ -25,6 +28,6 @@ public class MoneyReader {
 
     final double amount = Double.parseDouble(matcher.group("amount"));
 
-    return Money.of(amount, "EUR");
+    return Money.of(amount, defaultCurrency);
   }
 }

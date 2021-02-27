@@ -21,11 +21,13 @@ import java.util.stream.Collectors;
  * </p>
  */
 public class DynamicPackingSolvingStrategy implements PackingSolvingStrategy {
+  public static final int SCALE_FACTOR = 100;
+
   @Override
   public PackingResult solve(PackingRequest request) {
     final List<Item> items = toItems(request.getItems());
     int itemsCount = items.size();
-    final int capacity = request.getMaxWeight() * 100;
+    final int capacity = request.getMaxWeight() * SCALE_FACTOR;
 
     // sorting items to have the most valuable first
     Collections.sort(items, Comparator.comparing(Item::getValue)
@@ -85,8 +87,8 @@ public class DynamicPackingSolvingStrategy implements PackingSolvingStrategy {
     return items.stream()
         .map(i -> new Item(
             i.getIndex(),
-            (int) (i.getWeight() * 100),
-            i.getCost().getNumber().intValueExact() * 100
+            (int) (i.getWeight() * SCALE_FACTOR),
+            i.getCost().getNumber().intValueExact() * SCALE_FACTOR
         ))
         .collect(Collectors.toList());
   }

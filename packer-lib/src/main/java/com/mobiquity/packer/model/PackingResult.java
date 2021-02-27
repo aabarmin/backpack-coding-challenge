@@ -1,6 +1,7 @@
 package com.mobiquity.packer.model;
 
 import java.util.Collection;
+import java.util.Collections;
 
 public class PackingResult {
   private final Collection<BackpackItem> items;
@@ -10,6 +11,6 @@ public class PackingResult {
   }
 
   public Collection<BackpackItem> getItems() {
-    return items;
+    return Collections.unmodifiableCollection(items);
   }
 }

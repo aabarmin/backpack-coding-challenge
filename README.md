@@ -26,7 +26,7 @@ dependencies and capabilities. In order to build the project using one or anothe
 
 Also, the project has GitHub Actions configured using the `./github/workflows/build.yml` file.
 
-# Building the Project
+# Building the Project Locally
 
 In order to build the project simply execute the following command: 
 
@@ -66,3 +66,31 @@ final KnapsackProblemSolver solver = KnapsackProblemSolverBuilder.builder()
 
 The library doesn't provide any integration with well-known IoC and DI frameworks like Spring Framework or Google Guice, 
 it's pure-java library. 
+
+# Adding the Knapsack Problem Solver as Apache Maven or Gradle dependency
+
+The `packer-lib` is available on GitHub Packages and can be added as dependency to your Apache Maven or Gradle project.
+Add the following dependency to your `pom.xml` to add as Apache Maven dependency: 
+
+```xml
+<dependency>
+  <groupId>com.mobiquity</groupId>
+  <artifactId>packer-lib</artifactId>
+  <version>${library.version}</version>
+</dependency>
+```
+
+Add the following to the `build.gradle`: 
+
+```groovy
+dependencies {
+  implementation 'com.mobiquity:packer-lib:${library.version}'
+}
+```
+
+# Configured GitHub Actions
+
+There are two GitHub Actions workflows configured in the project: 
+
+* `.github/workflows/build.yml` to check every commit. 
+* `.github/workflows/release.yml` to deploy artifacts to GitHub Packages when a new GitHub release is created. 

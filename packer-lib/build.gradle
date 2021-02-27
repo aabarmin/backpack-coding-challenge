@@ -4,12 +4,3 @@ dependencies {
 
     testImplementation 'com.google.code.gson:gson:2.8.6'
 }
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            artifactId = 'implementation'
-            from components.java
-        }
-    }
-}
